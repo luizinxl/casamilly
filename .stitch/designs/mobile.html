@@ -1,0 +1,390 @@
+<!DOCTYPE html><html class="scroll-smooth stitch-anim-fade-in" lang="pt-BR" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Casa Milly | Bolos Artesanais sob encomenda</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Dancing Script, Cormorant Garamond, Outfit, Montserrat, Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Montserrat:wght@400;500;600;700&amp;family=Outfit:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- BEGIN: Tailwind Configuration -->
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blush: {
+              50: '#FFF8FA',
+              100: '#FCECEF',
+              150: '#FBE6EA',
+              200: '#F8DCE2',
+              300: '#F2CAD3',
+              400: '#E4A0B1',
+              500: '#D97E96',
+            },
+            cream: {
+              50: '#FDFCF9',
+              100: '#FDF8F5',
+              200: '#F5E8DC',
+            },
+            berry: {
+              DEFAULT: '#B04A65',
+              dark: '#942538',
+              deep: '#692A38',
+              light: '#C76580',
+              accent: '#A4191C'
+            },
+            coffee: {
+              DEFAULT: '#3D272A',
+              soft: '#5E3E43',
+              light: '#7A555B',
+              border: '#E8CCD2'
+            }
+          },
+          fontFamily: {
+            cursive: ['"Dancing Script"', 'cursive'],
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '"Montserrat"', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'velvet': '0 10px 30px -5px rgba(105, 42, 56, 0.08), 0 4px 12px -2px rgba(105, 42, 56, 0.04)',
+            'velvet-hover': '0 20px 40px -8px rgba(105, 42, 56, 0.16), 0 8px 18px -4px rgba(105, 42, 56, 0.08)',
+            'button': '0 6px 20px -2px rgba(176, 74, 101, 0.35)',
+            'button-hover': '0 10px 25px -2px rgba(148, 37, 56, 0.45)',
+          }
+        }
+      }
+    }
+  </script>
+<!-- END: Tailwind Configuration -->
+<style data-purpose="typography-and-effects">
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    }
+    .font-brand {
+      font-family: 'Dancing Script', cursive;
+      line-height: 1.25;
+    }
+    .font-sub {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal-on-scroll.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @keyframes ctaPulseSoft {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 6px 20px -2px rgba(176, 74, 101, 0.35);
+      }
+      50% {
+        transform: scale(1.025);
+        box-shadow: 0 10px 26px -2px rgba(148, 37, 56, 0.45);
+      }
+    }
+    .animate-cta-pulse {
+      animation: ctaPulseSoft 2.4s ease-in-out infinite;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal-on-scroll {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+      .animate-cta-pulse {
+        animation: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="text-coffee font-sans selection:bg-berry-light selection:text-white antialiased overflow-x-hidden min-h-screen" data-mode="connect" style="background: linear-gradient(rgb(255, 212, 226) 0%, rgb(253, 238, 243) 18%, rgb(255, 246, 248) 35%, rgb(255, 255, 255) 50%, rgb(255, 246, 248) 65%, rgb(253, 238, 243) 85%, rgb(255, 212, 226) 100%);">
+<!-- BEGIN: Header Navigation -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-blush-300/60 transition-all duration-300 shadow-sm" data-purpose="main-navigation">
+
+</header>
+<!-- END: Header Navigation -->
+<!-- BEGIN: Hero Section -->
+<section class="relative pt-8 pb-12 text-center" data-purpose="hero-section" id="inicio">
+<div class="max-w-4xl mx-auto px-4 relative z-10 flex flex-col items-center">
+<div class="reveal-on-scroll flex items-center justify-center mb-4 max-w-full w-full is-visible">
+<img alt="Casa Milly Bolos Artesanais" class="w-72 max-w-full h-auto mx-auto object-contain drop-shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVz3ip2mhGVPylQoFg7WHb4FzDu54G_hlM2rny3LqDp9BFDGNgms9JY2lqjeK9_A2tPI_XJgMNQ7nT3ZtgfM93bht-b9LM7yHx837DYG3s0CBOf9BoSWy4nfF_NZu2-MSdxw8t45tXuDt_1vcUCQ5wSqdildGNE8yqpDTKhB52QMNF5EFejN7kuLmeJfifIh2w0qINB8pKUm0eFDH42D3k9TIfAVYucfvZuPXhN1xv2i8mBs6Lst6gC4o5ll7a_ChPTQ" style="filter: drop-shadow(rgba(217, 107, 137, 0.28) 0px 10px 28px);">
+</div>
+<div class="reveal-on-scroll space-y-4 max-w-md mx-auto is-visible">
+<div class="pt-2 flex flex-col items-center justify-center gap-3 w-full">
+<a class="animate-cta-pulse w-full inline-flex items-center justify-center gap-2.5 px-6 py-3.5 bg-berry-dark text-white rounded-full font-medium shadow-button hover:bg-berry-deep hover:shadow-button-hover transition-all duration-300 text-sm" href="https://wa.me/5511961728328?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20encomenda%20na%20Casa%20Milly" rel="noopener noreferrer" target="_blank">
+<svg class="w-5 h-5 fill-current flex-shrink-0" viewBox="0 0 24 24">
+<path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.087.086-.177.18-.076.353.101.173.449.741.963 1.199.662.589 1.22.771 1.393.858.173.086.274.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.202.043.073.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.66 1.438 5.168L2 22l4.98-1.309C8.423 21.492 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"></path>
+</svg>
+<span class="">Quero fazer o pedido</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Cardápio Bolos no Pote -->
+<section class="py-8 relative" data-purpose="product-catalog" id="cardapio">
+<div class="max-w-6xl mx-auto px-4">
+<!-- Section Header -->
+<div class="text-center max-w-xl mx-auto mb-8 reveal-on-scroll is-visible">
+<span class="text-xs uppercase tracking-[0.25em] font-semibold text-berry block mb-1">Cardápio Especial</span>
+<h2 class="font-brand text-4xl text-berry-dark mb-2">bolos no pote</h2>
+<p class="font-sub text-lg text-coffee-soft italic">
+Camadas fartas, cremosas e preparadas com afeto
+</p>
+<div class="flex items-center justify-center gap-2 mt-3 text-berry/50">
+<span class="h-px w-12 bg-blush-300"></span>
+<span class="text-xs">♥</span>
+<span class="h-px w-12 bg-blush-300"></span>
+</div>
+</div>
+<!-- Cards Grid em coluna única -->
+<div class="grid grid-cols-1 gap-6 max-w-md mx-auto items-stretch">
+<!-- Card 1: Morango Cravejado -->
+<article class="reveal-on-scroll bg-cream-50 rounded-3xl p-6 border border-blush-300 shadow-velvet flex flex-col justify-between relative overflow-hidden group is-visible" data-purpose="product-card">
+<div class="absolute -top-10 -right-10 w-24 h-24 bg-blush-100 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex flex-col flex-grow">
+<!-- Imagem Centralizada com imagem oficial IMAGE_7 -->
+<div class="flex justify-center items-center h-52 mb-4">
+<img alt="Bolo no Pote Morango Cravejado" class="max-h-48 w-auto object-contain drop-shadow-md pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWnF0ATvGkizw_Be3NHXRR-ptCFJmsonSZjhYqPkJt1AU4mrcN-6nqVFaiNJKxXK-VvoyUZbLPxFCihcoYbVsWI_w-5IzPOgj9_-4Y7ZX0v9Xlt7h_R6DSlK_E3hgtynx6kCPxSP_xSpgE9a8fw5uyGCJeZJ6Mezr4un6r0ypMOIRiEx8_-gzcoj0odzya4HLPvOLgkaOTOeLkZ4IiieGYj92NkRzNZGH9RhmX1rmCEGQeoFIs1ZnQ">
+</div>
+<!-- Título -->
+<h3 class="font-brand text-3xl text-berry-dark text-left leading-normal mb-2 group-hover:text-berry transition-colors">
+morango cravejado
+</h3>
+<!-- Descrição -->
+<p class="text-coffee leading-relaxed text-sm font-normal mb-4 flex-grow">
+massa de baunilha artesanal, camadas generosas de recheio de brigadeiro de leite em pó com morangos frescos e selecionados, e uma casquinha do famoso chocolate branco cravejado.
+</p>
+<!-- Preço destacado -->
+<div class="text-2xl font-bold text-berry-dark mb-4 tracking-tight">
+R$18,00
+</div>
+</div>
+<!-- Botão WhatsApp -->
+<div>
+<a class="animate-cta-pulse w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-berry text-white font-medium hover:bg-berry-dark transition-all duration-300 shadow-button active:scale-[0.98] text-sm" href="https://wa.me/5511961728328?text=Ol%C3%A1!%20Gostaria%20de%20encomendar%20o%20bolo%20no%20pote%20*morango%20cravejado*%20(R$18,00)" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 fill-current flex-shrink-0" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.087.086-.177.18-.076.353.101.173.449.741.963 1.199.662.589 1.22.771 1.393.858.173.086.274.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.202.043.073.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.66 1.438 5.168L2 22l4.98-1.309C8.423 21.492 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"></path></svg>
+<span class="">Pedir pelo WhatsApp</span>
+</a>
+</div>
+</article>
+<!-- Card 2: Dois Amores -->
+<article class="reveal-on-scroll bg-cream-50 rounded-3xl p-6 border border-blush-300 shadow-velvet flex flex-col justify-between relative overflow-hidden group is-visible" data-purpose="product-card">
+<div class="absolute -top-10 -right-10 w-24 h-24 bg-blush-100 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex flex-col flex-grow">
+<!-- Imagem Centralizada com imagem oficial IMAGE_6 -->
+<div class="flex justify-center items-center h-52 mb-4">
+<img alt="Bolo no Pote Dois Amores" class="max-h-48 w-auto object-contain drop-shadow-md pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgJm378tzaNEuLkDMtjQJjmZ6xMX33TU4fR6c0YCxlOBmZCIeOezV3MRuAG8OuX_ufsmuO_WxZqjSmpQY2y4ykvQbBlR3YNy_jur5NCFndlbxxtCpNED0AXSgzuEuLtHs4MxrCJ3jdkKyqTB7Wca_WfmPmaIWqlgBoP1ml0tjRNMtn-DhB4P3YwWsXx6Na-Hq8vUD3doqoZLt-N5_YZ6yCQP1UIQVAgjEusJ60SyfLM1RWXT7e17O-">
+</div>
+<!-- Título -->
+<h3 class="font-brand text-3xl text-berry-dark text-left leading-normal mb-2 group-hover:text-berry transition-colors">
+dois amores
+</h3>
+<!-- Descrição -->
+<p class="text-coffee leading-relaxed text-sm font-normal mb-4 flex-grow">
+massa de chocolate artesanal, com camadas generosas de recheio de brigadeiro de leite em pó e brigadeiro de chocolate.
+</p>
+<!-- Preço destacado -->
+<div class="text-2xl font-bold text-berry-dark mb-4 tracking-tight">
+R$15,00
+</div>
+</div>
+<!-- Botão WhatsApp -->
+<div>
+<a class="animate-cta-pulse w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-berry text-white font-medium hover:bg-berry-dark transition-all duration-300 shadow-button active:scale-[0.98] text-sm" href="https://wa.me/5511961728328?text=Ol%C3%A1!%20Gostaria%20de%20encomendar%20o%20bolo%20no%20pote%20*dois%20amores*%20(R$15,00)" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 fill-current flex-shrink-0" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.087.086-.177.18-.076.353.101.173.449.741.963 1.199.662.589 1.22.771 1.393.858.173.086.274.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.202.043.073.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.66 1.438 5.168L2 22l4.98-1.309C8.423 21.492 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"></path></svg>
+<span class="">Pedir pelo WhatsApp</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- END: Cardápio Bolos no Pote -->
+<!-- BEGIN: Entrega & Retirada + Pagamento -->
+<section class="py-8 relative" data-purpose="service-details" id="entrega">
+<div class="max-w-6xl mx-auto px-4">
+<div class="grid grid-cols-1 gap-6 max-w-md mx-auto items-stretch">
+<!-- Card Entrega e Retirada -->
+<div class="reveal-on-scroll bg-white/85 rounded-3xl p-6 border border-blush-300 shadow-velvet flex flex-col justify-between is-visible" data-purpose="delivery-info">
+<div class="">
+<div class="flex items-center gap-3 mb-5 border-b border-blush-200 pb-4">
+<span class="w-10 h-10 rounded-2xl bg-blush-100 flex items-center justify-center text-berry-dark flex-shrink-0">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+<path d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1m-6 0a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</span>
+<div>
+<span class="text-xs uppercase tracking-wider font-semibold text-berry block">Logística</span>
+<h3 class="font-brand text-3xl text-berry-dark leading-tight mt-0.5">entrega e retirada</h3>
+</div>
+</div>
+<ul class="space-y-3 text-coffee text-sm leading-relaxed">
+<li class="flex items-start gap-2.5 bg-blush-50/80 p-3.5 rounded-2xl border border-blush-200/70">
+<span class="text-berry font-bold text-base leading-none mt-0.5 flex-shrink-0">•</span>
+<div>
+<strong class="text-berry-dark font-semibold">Regiões próximas:</strong>
+<span class=""> entrega por nossa conta aos domingos, em horário combinado</span>
+</div>
+</li>
+<li class="flex items-start gap-2.5 bg-blush-50/80 p-3.5 rounded-2xl border border-blush-200/70">
+<span class="text-berry font-bold text-base leading-none mt-0.5 flex-shrink-0">•</span>
+<div>
+<strong class="text-berry-dark font-semibold">Regiões distantes:</strong>
+<span class=""> entrega por motoboy, com taxa de entrega conforme a distância</span>
+</div>
+</li>
+<li class="flex items-start gap-2.5 bg-blush-50/80 p-3.5 rounded-2xl border border-blush-200/70">
+<span class="text-berry font-bold text-base leading-none mt-0.5 flex-shrink-0">•</span>
+<div>
+<strong class="text-berry-dark font-semibold">Retirada:</strong>
+<span class=""> a combinar</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<!-- Card Formas de Pagamento -->
+<div class="reveal-on-scroll bg-white/85 rounded-3xl p-6 border border-blush-300 shadow-velvet flex flex-col justify-between is-visible" data-purpose="payment-info" id="pagamento">
+<div>
+<div class="flex items-center gap-3 mb-5 border-b border-blush-200 pb-4">
+<span class="w-10 h-10 rounded-2xl bg-blush-100 flex items-center justify-center text-berry-dark flex-shrink-0">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+<path d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</span>
+<div class="">
+<span class="text-xs uppercase tracking-wider font-semibold text-berry block">FACILIDADE</span>
+<h3 class="font-brand text-3xl text-berry-dark leading-tight mt-0.5">formas de pagamento</h3>
+</div>
+</div>
+<ul class="space-y-2.5 text-coffee text-sm mb-5">
+<li class="flex items-center gap-2.5 bg-blush-50/80 px-3.5 py-3 rounded-2xl border border-blush-200/70">
+<span class="w-2 h-2 rounded-full bg-berry flex-shrink-0"></span>
+<span class="whitespace-nowrap font-medium">cartão de débito/crédito</span>
+</li>
+<li class="flex items-center gap-2.5 bg-blush-50/80 px-3.5 py-3 rounded-2xl border border-blush-200/70">
+<span class="w-2 h-2 rounded-full bg-berry flex-shrink-0"></span>
+<span class="whitespace-nowrap font-medium">dinheiro</span>
+</li>
+<li class="flex items-center gap-2.5 bg-blush-50/80 px-3.5 py-3 rounded-2xl border border-blush-200/70">
+<span class="w-2 h-2 rounded-full bg-berry flex-shrink-0"></span>
+<span class="whitespace-nowrap font-medium">pix</span>
+</li>
+</ul>
+</div>
+<!-- Parcelamento Highlight Card -->
+<div class="bg-gradient-to-r from-blush-100 to-blush-150 rounded-2xl p-4 border border-blush-300 mt-2">
+<p class="text-xs text-berry-dark leading-relaxed font-normal">
+<strong class="font-semibold underline decoration-berry-light underline-offset-4">para pedidos acima de R$50,00:</strong>
+ parcelamento em até 3x + taxa da maquininha
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Entrega & Retirada + Pagamento -->
+<!-- BEGIN: Contato & Rodapé -->
+<footer class="border-t border-blush-300 pt-10 pb-8 relative" data-purpose="contact-and-footer" id="contato">
+<div class="max-w-6xl mx-auto px-4">
+<!-- Chamada Final -->
+<div class="text-center max-w-sm mx-auto mb-8 reveal-on-scroll is-visible">
+<p class="text-base text-coffee font-normal leading-relaxed mb-3">
+encomende já os seus e garanta sua experiência incrível com os bolos da
+</p>
+<img alt="Casa Milly Bolos Artesanais" class="h-32 w-auto mx-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3j5LebnK-7aIR4PQwhFNcR7IwKF5-S4TaiKS2_59XJberUx8Re_V9H6x1Ux9dgyayOC6o8TYZhvYIfGY-r-aqJDHyql55V6S33T_rpE-ljlO8v64Di-5VSLeBb1dtyjHcQiHCcRl7loW5ii7WJyYaMiEWncxzFS3Wyh89hteTWsrajO7MkYbhp_ebS_M7_v8tof7wrcPjt-Oo9mqlNpEBla_3aXX1CZMaIPJXn818caAUhvbZ0X9toEoU-jhSm8qYeA">
+</div>
+<!-- Cards de Contato Centralizados Mobile -->
+<div class="grid grid-cols-1 gap-4 max-w-sm mx-auto mb-10">
+<!-- WhatsApp Card -->
+<a class="reveal-on-scroll group p-6 rounded-3xl bg-cream-50 border border-blush-300 shadow-velvet hover:shadow-velvet-hover transition-all duration-300 flex flex-col items-center justify-center text-center gap-2 is-visible" href="https://wa.me/5511961728328?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Casa%20Milly%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida" rel="noopener noreferrer" target="_blank">
+<div class="w-10 h-10 rounded-full bg-blush-100 flex items-center justify-center text-berry-dark group-hover:scale-110 transition-transform">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+<path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.087.086-.177.18-.076.353.101.173.449.741.963 1.199.662.589 1.22.771 1.393.858.173.086.274.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.202.043.073.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.66 1.438 5.168L2 22l4.98-1.309C8.423 21.492 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"></path>
+</svg>
+</div>
+<span class="font-brand text-3xl text-berry-dark group-hover:text-berry transition-colors leading-tight">contato</span>
+<span class="text-lg font-semibold text-coffee tracking-wide">(11) 96172-8328</span>
+</a>
+<!-- Instagram Card -->
+<a class="reveal-on-scroll group p-6 rounded-3xl bg-cream-50 border border-blush-300 shadow-velvet hover:shadow-velvet-hover transition-all duration-300 flex flex-col items-center justify-center text-center gap-2 is-visible" href="https://instagram.com/casamilly_" rel="noopener noreferrer" target="_blank">
+<div class="w-10 h-10 rounded-full bg-blush-100 flex items-center justify-center text-berry-dark group-hover:scale-110 transition-transform">
+<svg class="w-5 h-5 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24">
+<rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
+<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+<line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+</svg>
+</div>
+<span class="font-brand text-3xl text-berry-dark group-hover:text-berry transition-colors leading-tight">instagram</span>
+<span class="text-lg font-semibold text-coffee tracking-wide">@casamilly_</span>
+</a>
+</div>
+<!-- Footer Bottom Brand & Credits -->
+<div class="text-center border-t border-blush-300/80 pt-6 flex flex-col items-center justify-center">
+<div class="flex items-center justify-center gap-3 mb-2">
+<span class="w-8 h-px bg-berry/30"></span>
+<img alt="Casa Milly" class="h-12 w-auto mx-auto object-contain drop-shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKG_TKR9ZywcBk2Du9vZ2J0JxSw1m7kyS1sE4arG71xvp01-fyiE7E90NgG6yDr6G_sshH_liPtOBK6XtUy0zj5p6Llck3NLyBhNlfj1v-Nzxg4INYo8TUc2WW_BTQzQF8RVTQqWyMIkRYGs1LPtF6r0Yen4BIeEEz0C7-2rIH7aVvDovYFbnxSn9zm9BDdfRvnQ92tut7moQv_F8b5Yq4WK_nOg6CMgBq3zVD5znxOlJ0gVLNjEtr">
+<span class="w-8 h-px bg-berry/30"></span>
+</div>
+<p class="text-xs text-coffee-soft uppercase tracking-[0.2em] font-medium mt-1">
+Bolos Artesanais Sob Encomenda • Feito com amor
+</p>
+<p class="text-xs text-coffee-light mt-2">
+© <span class="" id="current-year">2026</span> Casa Milly. Todos os direitos reservados.
+</p>
+</div>
+</div>
+</footer>
+<!-- END: Contato & Rodapé -->
+<!-- BEGIN: Scripts -->
+<script data-purpose="scroll-animations">
+  document.addEventListener('DOMContentLoaded', () => {
+    // Dynamic Year
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+
+    // Check for reduced motion preference
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const animatedElements = document.querySelectorAll('.reveal-on-scroll');
+
+    if (prefersReducedMotion) {
+      animatedElements.forEach(el => el.classList.add('is-visible'));
+      return;
+    }
+
+    // Intersection Observer for elegant scroll reveal on cards and sections
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      rootMargin: '0px 0px -50px 0px',
+      threshold: 0.12
+    });
+
+    animatedElements.forEach((el) => {
+      observer.observe(el);
+    });
+  });
+</script>
+<!-- END: Scripts -->
+
+
+
+
+</body></html>

@@ -6,7 +6,7 @@ import { Footer } from '../components/Footer';
 import { OrderModal } from '../components/OrderModal';
 import { CartModal } from '../components/CartModal';
 import type { CartItem } from '../components/CartModal';
-import { FloatingHearts } from '../components/FloatingHearts';
+import { FloatingCakes } from '../components/FloatingCakes';
 import { brandData } from '../data/mockData';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
@@ -44,7 +44,7 @@ export function Home() {
 
   return (
     <div className="min-h-screen font-sans text-coffee bg-gradient-to-b from-blush-100 via-cream-50 to-blush-200 relative pb-20 md:pb-0">
-      <FloatingHearts />
+      <FloatingCakes />
       <main>
         <Hero logoUrl={brandData.images.logoMain} onOrderClick={() => handleOpenOrderModal(null)} />
         <Menu onOrderClick={handleOpenOrderModal} />

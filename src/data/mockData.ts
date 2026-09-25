@@ -41,12 +41,9 @@ export const deliveryData = {
   subtitle: "Logística",
   items: [
     {
-      title: "Regiões próximas:",
-      description: "entrega por nossa conta aos domingos, em horário combinado"
-    },
-    {
-      title: "Regiões distantes:",
-      description: "entrega por motoboy, com taxa de entrega conforme a distância"
+      title: "Entrega:",
+      description: "entrega por motoboy, com taxa de entrega conforme a distância",
+      note: "aos domingos, a entrega é por nossa conta para regiões próximas"
     },
     {
       title: "Retirada:",

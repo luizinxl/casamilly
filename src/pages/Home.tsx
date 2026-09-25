@@ -44,6 +44,7 @@ export function Home() {
 
   return (
     <div className="min-h-screen font-sans text-coffee bg-gradient-to-b from-blush-100 via-cream-50 to-blush-200 relative pb-20 md:pb-0">
+      <div className="noise-overlay"></div>
       <FloatingCakes />
       <main>
         <Hero logoUrl={brandData.images.logoMain} onOrderClick={() => handleOpenOrderModal(null)} />

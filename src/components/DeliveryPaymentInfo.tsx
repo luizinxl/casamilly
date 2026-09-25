@@ -23,9 +23,13 @@ export function DeliveryPaymentInfo() {
             {deliveryData.items.map((item, index) => (
               <div key={index} className="flex gap-4 bg-blush-50/50 hover:bg-blush-50 transition-colors p-5 rounded-2xl border border-blush-100/50">
                 <div className="w-2 h-2 rounded-full bg-berry-light mt-2 flex-shrink-0"></div>
-                <p className="text-coffee-soft text-sm leading-relaxed">
-                  <span className="font-bold text-coffee block mb-1">{item.title}</span> {item.description}
-                </p>
+                <div className="text-coffee-soft text-sm leading-relaxed">
+                  <span className="font-bold text-coffee block mb-1">{item.title}</span>
+                  {item.description}
+                  {'note' in item && item.note && (
+                    <p className="mt-2 text-xs text-berry-dark italic opacity-80">✦ {item.note}</p>
+                  )}
+                </div>
               </div>
             ))}
           </div>
